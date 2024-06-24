@@ -1,0 +1,52 @@
+.ContainerBotones {
+    text-align: center;
+    margin-top: 70px;
+  }
+  .ContainerBotones .botones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 30px;
+    text-align: center;
+    flex-direction: column;
+  }
+  .ContainerBotones .botones button {
+    color: black;
+    background-color: rgb(254, 189, 228);
+    border-radius: 7px;
+    border-color: none;
+    margin: 30px;
+    width: fit-content;
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+    grid-template-rows: repeat(6, 200px);
+    justify-content: center;
+    padding: 20px;
+    grid-gap: 30px;
+    margin-bottom: 180px;
+  }
+  .galeria .item {
+    background-size: cover;
+    background-position: center;
+  }
+  .galeria .item .item1 {
+    background-image: url(../assets/media/gal\ 1.jpg);
+  }
+  .galeria .item .item2 {
+    background-image: url(../assets/media/gal\ 2.jpg);
+  }
+  .galeria .item .item3 {
+    background-image: url(../assets/media/gal\ 3.jpg);
+  }
+  .galeria .item .item4 {
+    background-image: url(../assets/media/gal\ 4.jpg);
+  }
+  .galeria .item .item5 {
+    background-image: url(../assets/media/gal\ 5.jpg);
+  }
+  .galeria .item .item6 {
+    background-image: url(../assets/media/gal\ 6.jpg);
+  }
