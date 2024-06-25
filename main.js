@@ -1,4 +1,4 @@
-let prodcutos = [
+let productos = [
     {id: 1, nombre:'MacetaRedonda', precio: 3000},
     {id: 2, nombre:'Maceta3D', precio: 4500},
     {id: 3, nombre:'PulseraPlanetas', precio: 6500},
@@ -8,27 +8,27 @@ let prodcutos = [
 ];
 
 let carrito = {
-    productos:[],
+    productos: [],
 
     agregarProducto: function(producto) {
         this.productos.push(producto);
-        alert('${producto.nombre}" ha sido agregado al carrito');
+        alert(`${producto.nombre}" ha sido agregado al carrito`);
     },
 
     revoverProducto: function(id) {
         let productoIndex = this.productos.findIndex(producto => producto.id === id);
         if (productoIndex !== -1) {
             let productoEliminado = this.productos.splice(productoIndex, 1)[0];
-            alert('${productoEliminado.nombre}" ha sido eliminado del carrito');
+            alert(`${productoEliminado.nombre}" ha sido eliminado del carrito`);
         } else {
-            alert('Producto con ID ${id}" no encontrado en el carrito');
+            alert(`Producto con ID ${id}" no encontrado en el carrito`);
         }
     },
 
-    mostrar1productos: function() {
+    mostrarProductos: function() {
         alert('Productos en el carrito: ');
         this.productos.forEach(producto => {
-            alert('- ${producto.nombre}: $${producto.precio}"');
+            alert(`- ${producto.nombre}: $${producto.precio}`);
         });
     },
 
@@ -43,18 +43,18 @@ let carrito = {
 
 function seleccionarProducto() {
     alert('Productos disponibles: ');
-    prodcutos.forEach(producto => {
-        alert('ID: ${producto.id} - ${producto.nombre} - Precio: $${producto.precio}"');    
+    productos.forEach(producto => {
+        alert(`ID: ${producto.id} - ${producto.nombre} - Precio: $${producto.precio}"`);    
     });
 
     while (true) {
         let idSeleccionado = parseInt(prompt('Ingrese el ID del producto que desea agregar al carrito (o ingrese 0 para terminar):'));
 
-        if(idSeleccionado === 0){
+        if(idSeleccionado === 0) {
             break;
         }
 
-        let productoSeleccionado = producto.find(producto => producto.id === idSeleccionado);
+        let productoSeleccionado = productos.find(producto => producto.id === idSeleccionado);
 
         if (productoSeleccionado) {
             carrito.agregarProducto(productoSeleccionado);
@@ -62,7 +62,11 @@ function seleccionarProducto() {
             alert('ID de producto no válido. Por favor, ingrese un ID válido.');
         }
     }
+
+    let totalCarrito = carrito.calcularTotal();
+    alert(`El total de su compra es: $${totalCarrito}`)
 }
 
+seleccionarProducto();
 
 
