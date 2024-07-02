@@ -3,9 +3,9 @@
     margin-top: 70px;
   }
   .ContainerBotones .botones {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: center; */
     margin: 30px;
     text-align: center;
   }
@@ -18,74 +18,11 @@
     width: fit-content;
   }
   
-  .galeria {
-    display: grid;
-    grid-template-columns: repeat(1, 250px);
-    grid-template-rows: repeat(6, 200px);
-    justify-content: center;
-    padding: 20px;
-    grid-gap: 30px;
-    margin-bottom: 180px;
+  .item img{
+    width: 300px;
+    height: fit-content;
   }
 
-.item{
-    background-size: cover;
-    background-position: center;
-}
-.item1{
-    background-image: url(./assets/Maceta3D.jpg);
-}
-.item2{
-    background-image: url(./assets/PulseraTriple.jpg);
-}
-.item3{
-    background-image: url(./assets/ScrunchieVintage.jpg);
-}
-.item4{
-    background-image: url(./assets/MacetaRedonda.jpg);
-}
-.item5{
-    background-image: url(./assets/PulseraPlaneta.jpg);
-}
-.item6{
-    background-image: url(./assets/ScrunchieLila.jpg);
-}
-
-  @media only screen and (min-width:480px){
-    .galeria{
-        grid-template-columns: repeat(2, 250px);
-        grid-template-rows: repeat(3, 200px);
-        margin-bottom: 150px;
-    }
-    .ContainerBotones {
-        text-align: start;
-        margin-top: 50px;
-    }
-    .botones{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin: 30px;
-        justify-content: center;
-        flex-direction: row;
-    }
-}
-@media only screen and (min-width:768px) {
-    .galeria{
-        grid-template-columns: repeat(3, 250px);
-        grid-template-rows: repeat(2, 200px);
-        margin-bottom: 150px;
-    }
-    .ContainerBotones {
-        text-align: start;
-        margin-top: 50px;
-    }
-    .botones{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin: 30px;
-        justify-content: center;
-        flex-direction: row;
-    }
+  #carrito-contenedor{
+    text-align: center;
   }
