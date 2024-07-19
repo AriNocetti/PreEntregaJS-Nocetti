@@ -1,0 +1,8 @@
+[
+    { "id": 1, "nombre": "Maceta Redonda", "precio": 3000, "categoria": "macetas", "imagen": "./assets/MacetaRedonda.jpg" },
+    { "id": 2, "nombre": "Maceta 3D", "precio": 4500, "categoria": "macetas", "imagen": "./assets/Maceta3D.jpg" },
+    { "id": 3, "nombre": "Pulsera Planetas", "precio": 6500, "categoria": "pulseras", "imagen": "./assets/PulseraPlaneta.jpg" },
+    { "id": 4, "nombre": "Pulsera Triple", "precio": 5500, "categoria": "pulseras", "imagen": "./assets/PulseraTriple.jpg" },
+    { "id": 5, "nombre": "Scrunchie Vintage", "precio": 2500, "categoria": "scrunchies", "imagen": "./assets/ScrunchieVintage.jpg" },
+    { "id": 6, "nombre": "Scrunchie Lila", "precio": 1500, "categoria": "scrunchies", "imagen": "./assets/ScrunchieLila.jpg" }
+]

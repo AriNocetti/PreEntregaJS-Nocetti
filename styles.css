@@ -1,3 +1,11 @@
+nav {
+  margin-left: 0;
+  background-color: rgb(247, 197, 227);
+}
+nav .navbar {
+  background-color: rgb(247, 197, 227);
+}
+
 .ContainerBotones {
     text-align: center;
     margin-top: 70px;
@@ -25,4 +33,17 @@
 
   #carrito-contenedor{
     text-align: center;
+  }
+
+  .pie-pagina{
+    background-color: rgb(250, 223, 247);
+  }
+
+  .pie-pagina .grupo-1{
+    background-color: rgb(247, 197, 227);
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    width: 100%;
   }
